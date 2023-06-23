@@ -18,7 +18,7 @@ const Header = () => {
                     <button onClick={() => signOut()}>Sign Out</button>
                     <div className="account-inline">
                         <p>{session?.user?.name}</p>
-                        <img src={session?.user?.image}/>
+                        {session?.user?.image && <img src={session.user.image} />}
                     </div>
                 </span>
             </div>
